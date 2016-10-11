@@ -58,7 +58,9 @@
             [cell.pageFlowView reloadData];
             NSLog(@"reload in model");
         }];
-        
+        cell.bannerView.adUnitID =@"ca-app-pub-4427777674967734/2226902208";
+        cell.bannerView.rootViewController = _superVC;
+        [cell.bannerView loadRequest:[GADRequest request]];
         return cell;
     }
     
@@ -116,7 +118,7 @@
 #pragma mark NewPagedFlowView Delegate
 - (CGSize)sizeForPageInFlowView:(NewPagedFlowView *)flowView {
 
-    return CGSizeMake(ScreenWidth * 0.4, ScreenHeight * 0.36);
+    return CGSizeMake(ScreenWidth * 0.36, ScreenHeight * 0.3);
 }
 
 - (void)didSelectCell:(UIView *)subView withSubViewIndex:(NSInteger)subIndex {
@@ -138,7 +140,7 @@
 - (UIView *)flowView:(NewPagedFlowView *)flowView cellForPageAtIndex:(NSInteger)index{
     PGIndexBannerSubiew *bannerView = (PGIndexBannerSubiew *)[flowView dequeueReusableCell];
     if (!bannerView) {
-        bannerView = [[PGIndexBannerSubiew alloc] initWithFrame:CGRectMake(0, 0 , ScreenWidth * 0.4, ScreenHeight * 0.36)];
+        bannerView = [[PGIndexBannerSubiew alloc] initWithFrame:CGRectMake(0, 0 , ScreenWidth * 0.4, ScreenHeight * 0.3)];
         bannerView.layer.cornerRadius = 1;
         bannerView.layer.masksToBounds = YES;
         bannerView.backgroundColor = [UIColor whiteColor];

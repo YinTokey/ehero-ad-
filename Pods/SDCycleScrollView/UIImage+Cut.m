@@ -2,7 +2,7 @@
 //  UIImage+Cut.m
 //  Pods
 //
-//  Created by Mac on 16/9/18.
+//  Created by YinjianChen on 2016/10/10.
 //
 //
 
@@ -54,4 +54,5 @@
     
     return cropped;
 }
+
 @end

@@ -11,6 +11,8 @@ pod 'ReactiveCocoa', '~> 2.5'
 pod 'MWPhotoBrowser'
 pod 'Reachability'
 #pod 'WebViewJavascriptBridge', '~> 5.0'
+pod 'Firebase/Core'
+pod 'Firebase/AdMob'
 end
 
  

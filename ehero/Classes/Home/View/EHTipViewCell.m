@@ -35,7 +35,7 @@
     if (cell == nil) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"EHTipViewCell" owner:nil options:nil] lastObject];
         [cell setSize:CGSizeMake(ScreenWidth,ScreenHeight*0.47)];
-        cell.pageFlowView = [[NewPagedFlowView alloc] initWithFrame:CGRectMake(0, 0,ScreenWidth , ScreenHeight * 0.41)];
+        cell.pageFlowView = [[NewPagedFlowView alloc] initWithFrame:CGRectMake(0, 0,ScreenWidth , ScreenHeight * 0.3)];
         cell.backgroundColor = RGB(238, 245, 250);
         cell.pageFlowView.backgroundColor = [UIColor clearColor];
         cell.pageFlowView.minimumPageAlpha = 0.1;
@@ -51,7 +51,7 @@
         [bottomScrollView addSubview:cell.pageFlowView];
         
         [cell addSubview:bottomScrollView];
-        
+
     }
     
     return cell;

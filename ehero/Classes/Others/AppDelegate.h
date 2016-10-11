@@ -13,5 +13,7 @@
 @property (strong, nonatomic) UIWindow *window;
 
 @property (nonatomic,assign)BOOL isReachable;
+
+@property (strong, nonatomic) UIView *launchView;
 @end
 

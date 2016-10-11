@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -12,44 +13,47 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QA5-4Z-oUL">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="2"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="2" id="JfT-IC-KYk"/>
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sd1-p2-dGy">
-                    <rect key="frame" x="266" y="6" width="46" height="22"/>
-                    <color key="backgroundColor" red="0.2666666667" green="0.70588235290000001" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.2666666667" green="0.70588235290000001" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="46" id="Tga-H3-NWU"/>
                         <constraint firstAttribute="height" constant="22" id="ksh-Fb-Rij"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <state key="normal" title="更多">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="moreBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="L2f-yQ-lsS"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9t-zX-XB3">
-                    <rect key="frame" x="8" y="6" width="62" height="22"/>
-                    <color key="backgroundColor" red="0.2666666667" green="0.70588235290000001" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.2666666667" green="0.70588235290000001" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="22" id="Y52-F6-FgM"/>
                         <constraint firstAttribute="width" constant="62" id="o00-yi-cHI"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <state key="normal" title="猜你喜欢">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="guessBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="XUG-M2-4aX"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ql-LX-0fG" customClass="GADBannerView">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="dDB-Fe-WyN"/>
+                    </constraints>
+                </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Sd1-p2-dGy" secondAttribute="trailing" constant="8" id="6BX-o7-ZCc"/>
                 <constraint firstItem="E9t-zX-XB3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="F9T-Kf-i9J"/>
@@ -57,11 +61,15 @@
                 <constraint firstAttribute="trailing" secondItem="QA5-4Z-oUL" secondAttribute="trailing" id="MNn-J2-nxO"/>
                 <constraint firstItem="QA5-4Z-oUL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XEi-2l-UnK"/>
                 <constraint firstItem="QA5-4Z-oUL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nHo-dM-xd5"/>
+                <constraint firstItem="2ql-LX-0fG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qau-Jk-QGf"/>
                 <constraint firstItem="E9t-zX-XB3" firstAttribute="top" secondItem="QA5-4Z-oUL" secondAttribute="bottom" constant="4" id="tng-5z-pIg"/>
+                <constraint firstAttribute="bottom" secondItem="2ql-LX-0fG" secondAttribute="bottom" constant="-2" id="x2m-Oa-iez"/>
+                <constraint firstAttribute="trailing" secondItem="2ql-LX-0fG" secondAttribute="trailing" id="xgU-3K-pWl"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="bannerView" destination="2ql-LX-0fG" id="fvm-eZ-UQz"/>
                 <outlet property="guessButton" destination="E9t-zX-XB3" id="HXz-fi-z7G"/>
                 <outlet property="moreButton" destination="Sd1-p2-dGy" id="Nvx-VO-5Cz"/>
             </connections>

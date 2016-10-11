@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "OpenShareHeader.h"
 #import <Reachability.h>
+#import <Firebase.h>
 
 @interface AppDelegate ()
 {
@@ -23,7 +24,7 @@
     // Override point for customization after application launch.
     //设置启动页面时间
     //[UIView setAnimationDuration:2];
-    [NSThread sleepForTimeInterval:1.0];
+   // [NSThread sleepForTimeInterval:1.0];
     
     
     //全局注册appId，别忘了#import "OpenShareHeader.h"
@@ -40,6 +41,11 @@
     hostReach = [Reachability reachabilityWithHostName:@"www.baidu.com"];
     //开始监测
     [hostReach startNotifier];
+    [FIRApp configure];
+    
+    
+    
+    
     return YES;
 }
 
@@ -89,7 +95,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
 
 
 @end

@@ -10,7 +10,7 @@
 
 #import "NewPagedFlowView.h"
 #import "PGIndexBannerSubiew.h"
-
+#import <GoogleMobileAds/GoogleMobileAds.h>
 @protocol tipViewCellDelegate <NSObject>
 
 - (void)guessClick:(UITableViewCell *)cell;
@@ -20,6 +20,7 @@
 
 
 @interface EHTipViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
 
 @property (nonatomic,strong) NewPagedFlowView *pageFlowView;
 

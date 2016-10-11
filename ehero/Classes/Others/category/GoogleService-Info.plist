@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>919602005876-jlp13f3plrf605uu4ek97e582ev20k0p.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.919602005876-jlp13f3plrf605uu4ek97e582ev20k0p</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDKit1_bPjXKmdh0og9shf_aubeu12eO0k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>919602005876</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.eherocc.ehero</string>
+	<key>PROJECT_ID</key>
+	<string>jishankai</string>
+	<key>STORAGE_BUCKET</key>
+	<string>jishankai.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:919602005876:ios:3da24d9f41933579</string>
+	<key>DATABASE_URL</key>
+	<string>https://jishankai.firebaseio.com</string>
+</dict>
+</plist>

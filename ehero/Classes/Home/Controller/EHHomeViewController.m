@@ -26,7 +26,7 @@
 
 #import <MJExtension.h>
 #import "UIImageView+WebCache.h"
-
+#import <GoogleMobileAds/GoogleMobileAds.h>
 @interface EHHomeViewController ()<UITextFieldDelegate,SDCycleScrollViewDelegate,EHHomeSearchBarDelegate>
 {
     /** 图片数组*/
@@ -47,7 +47,7 @@
 @property (nonatomic,strong) EHSiteSelectDelegate *siteSelectDelegate;
 @property (nonatomic,strong) EHHomeTableViewModel *homeTableViewModel;
 @property (nonatomic,strong) EHHomeNetViewModel *homeNetViewModel;
-
+@property(nonatomic, strong) GADInterstitial *interstitial;
 //@property (nonatomic,strong) NSMutableArray *tipsRecommendArr;
 
 @end
@@ -62,18 +62,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     major = @"sale";
-  
+
     [self initViewModels];
     [self getSlides];
 
     [self setNavBar];
     
     [self getRecommentTipsInfo];
-    
+
 }
 
 - (void)viewDidAppear:(BOOL)animated{
     [self.tableView reloadData];
+    
+  //  [self launchAnimation];
+   //    [self launchAd];
 }
 
 - (void)initViewModels{
@@ -222,4 +225,14 @@
     [self.navigationController pushViewController:searchVC animated:YES];
 }
 
+
+#pragma mark - Private Methods
+- (void)launchAd{
+    self.interstitial = [[GADInterstitial alloc] init];
+    self.interstitial.adUnitID = @"ca-app-pub-4427777674967734/2226902208";
+    GADRequest *request = [GADRequest request];
+    // Requests test ads on simulators.
+   // request.testDevices = @[ GAD_SIMULATOR_ID ];
+    [self.interstitial loadRequest:request];
+}
 @end

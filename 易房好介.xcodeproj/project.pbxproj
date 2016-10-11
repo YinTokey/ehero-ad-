@@ -164,6 +164,7 @@
 		04FC8E701D8695C800C58140 /* EHHousesInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FC8E6E1D8695C800C58140 /* EHHousesInfo.m */; };
 		04FD3ACF1D3DD942005B13B4 /* YTNetCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD3ACE1D3DD942005B13B4 /* YTNetCommand.m */; };
 		04FD3AD31D3DDA23005B13B4 /* MBProgressHUD+YT.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD3AD21D3DDA23005B13B4 /* MBProgressHUD+YT.m */; };
+		C9AC77011DAD1EA3005CD108 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9AC77001DAD1EA3005CD108 /* GoogleService-Info.plist */; };
 		F965115CC91166FFEBBF445F /* libPods-易房好介.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F1925BB3F0B5A1801B0AF6 /* libPods-易房好介.a */; };
 /* End PBXBuildFile section */
 
@@ -487,6 +488,7 @@
 		4B7EFFF3457019F859E1D042 /* Pods-ehero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ehero.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ehero/Pods-ehero.debug.xcconfig"; sourceTree = "<group>"; };
 		75F1925BB3F0B5A1801B0AF6 /* libPods-易房好介.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-易房好介.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7D3DFB712A908623EF807AB /* Pods-ehero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ehero.release.xcconfig"; path = "Pods/Target Support Files/Pods-ehero/Pods-ehero.release.xcconfig"; sourceTree = "<group>"; };
+		C9AC77001DAD1EA3005CD108 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "category/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEC0026F1A0457B464C0E5B3 /* Pods-易房好介.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-易房好介.debug.xcconfig"; path = "Pods/Target Support Files/Pods-易房好介/Pods-易房好介.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1733,6 +1735,7 @@
 				047E47881D7FBB0100B017EC /* category */,
 				04F06D2E1D2E0E040081A34D /* AppDelegate.h */,
 				04F06D2F1D2E0E040081A34D /* AppDelegate.m */,
+				C9AC77001DAD1EA3005CD108 /* GoogleService-Info.plist */,
 				04C5FFDE1D333292009146E5 /* PrefixHeader.pch */,
 			);
 			path = Others;
@@ -1998,6 +2001,7 @@
 			files = (
 				049AA07F1D5034D600761E3F /* Info.plist in Resources */,
 				04B4F4391D5ACE6100C6D4F3 /* EHHouseSourcesCell.xib in Resources */,
+				C9AC77011DAD1EA3005CD108 /* GoogleService-Info.plist in Resources */,
 				04E9CFFB1D46082B0087BD70 /* EHAgentInfoCommentCell.xib in Resources */,
 				04C3A8DF1D321596003203C0 /* EHEverydayhouseCell.xib in Resources */,
 				04BA4A6C1D894DCD00B93FE1 /* EHHouseDetailAgentCell.xib in Resources */,
@@ -2363,6 +2367,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WX3UYN22VP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ehero/Classes/Lib",
@@ -2388,7 +2393,7 @@
 					"\"UIKit\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.eherocc.ehero;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eherocc.eheroad;
 				PRODUCT_NAME = "易房好介";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2403,6 +2408,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WX3UYN22VP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ehero/Classes/Lib",
@@ -2428,7 +2434,7 @@
 					"\"UIKit\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.eherocc.ehero;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eherocc.eheroad;
 				PRODUCT_NAME = "易房好介";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
